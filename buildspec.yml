@@ -6,7 +6,7 @@ phases:
       nodejs: 18
     commands:
       - echo Installing Node.js dependencies...
-      - npm ci --legacy-peer-deps
+      - npm install --legacy-peer-deps
   build:
     commands:
       - echo Building the React app...
