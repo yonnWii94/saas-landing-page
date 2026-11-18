@@ -5,15 +5,18 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - echo Installing Node.js dependencies...
+      - echo "Recherche du dossier du projet..."
+      - cd /c/Users/DELL/Downloads/DEVOPS-6O-DAYS/J10/saas-landing-page    # Remplacez par le nom réel du dossier, ou supprimez si tout est déjà à la racine
+      - echo Installing dependencies...
       - npm install --legacy-peer-deps
   build:
     commands:
+      - cd nom-de-votre-sous-dossier    # Répétez le cd ici aussi
       - echo Building the React app...
       - npm run build
 
 artifacts:
   files:
     - '**/*'
-  base-directory: dist
+  base-directory: nom-de-votre-sous-dossier/dist    # Ajustez selon l'emplacement de votre dossier de build
   discard-paths: no
