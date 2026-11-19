@@ -14,8 +14,7 @@ const Hero = () => {
               Amazingly simple
             </h1>
             <p className="max-w-440 mb-14 body-1 max-md:mb-10">
-              We designed XORA AI Video Editor to be an easy to use, quick to
-              learn, and surprisingly powerful.
+             Nous avons conçu Tilapia pour qu’il soit simple à utiliser, rapide à prendre en main et étonnamment puissant.
             </p>
             <LinkScroll to="features" offset={-100} spy smooth>
               <Button icon="/images/zap.svg">Try it now</Button>
